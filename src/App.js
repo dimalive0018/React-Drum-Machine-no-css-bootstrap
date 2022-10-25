@@ -58,7 +58,7 @@ function App() {
   ];
 
   useEffect(() => {
-    document.addEventListener('keydown', keySound)
+    document.addEventListener('keydown', keySound())
   }, []);
 
   function keySound(e) {sound(e.key.toUpperCase())};
